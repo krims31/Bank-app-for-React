@@ -7,6 +7,7 @@ import './App.css'
 import CentreTop from './components/centre-top-card/CentreTop';
 import TotalIncome from './components/TotalIncome/TotalIncome';
 import Spending from './components/Spending/Spending';
+import Investments from './components/investments/Invstments';
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
       <TotalIncome />
       <Cashback />
       <Spending />
+      <Investments />
     </>
   )
 }

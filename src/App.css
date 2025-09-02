@@ -11,6 +11,8 @@ body {
   background-color: #151515;
 }
 
+
+
 .header-logo {
   color: #ffffff;
   font-size: 15px;
@@ -132,7 +134,7 @@ body {
   margin-top: 1px;
   margin-left: 60px;
   font-size: 10px;
-  color: #fff;
+  color: gray;
 }
 
 .Dior img {
@@ -153,7 +155,7 @@ body {
   margin-top: 1px;
   margin-left: 60px;
   font-size: 10px;
-  color: #fff;
+  color: gray;
 }
 
 .dkny img {
@@ -174,7 +176,7 @@ body {
   margin-top: 1px;
   margin-left: 60px;
   font-size: 10px;
-  color: #fff;
+  color: gray;
 }
 
 .Netflix img {
@@ -195,7 +197,7 @@ body {
   margin-top: 1px;
   margin-left: 60px;
   font-size: 10px;
-  color: #fff;
+  color: gray;
 }
 
 .viewall .starbucks h1 {
@@ -209,7 +211,7 @@ body {
   margin-top: 1px;
   margin-left: 225px;
   font-size: 10px;
-  color: #fff;
+  color: gray;
 }
 
 .viewall .DIOR h1 {
@@ -223,7 +225,7 @@ body {
   margin-top: 1px;
   margin-left: 230px;
   font-size: 10px;
-  color: #fff;
+  color: gray;
 }
 
 .viewall .dkny h1 {
@@ -237,7 +239,7 @@ body {
   margin-top: 1px;
   margin-left: 229px;
   font-size: 10px;
-  color: #fff;
+  color: gray;
 }
 
 .viewall .Netflix h1 {
@@ -251,7 +253,7 @@ body {
   margin-top: 1px;
   margin-left: 230px;
   font-size: 10px;
-  color: #fff;
+  color: gray;
 }
 
 .my-goals {
@@ -296,7 +298,7 @@ body {
   margin-top: 1px;
   margin-left: 60px;
   font-size: 10px;
-  color: #fff;
+  color: gray;
 }
 
 .health img {
@@ -317,7 +319,7 @@ body {
   margin-top: 1px;
   margin-left: 60px;
   font-size: 10px;
-  color: #fff;
+  color: gray;
 }
 
 .Laptop img {
@@ -338,7 +340,7 @@ body {
   margin-top: 1px;
   margin-left: 60px;
   font-size: 10px;
-  color: #fff;
+  color: gray;
 }
 
 .clothes img {
@@ -359,7 +361,7 @@ body {
   margin-top: 1px;
   margin-left: 60px;
   font-size: 10px;
-  color: #fff;
+  color: gray;
 }
 
 .Traveling img {
@@ -380,7 +382,7 @@ body {
   margin-top: 1px;
   margin-left: 60px;
   font-size: 10px;
-  color: #fff;
+  color: gray;
 }
 
 .viewall-2 .iphone-2 h1 {
@@ -661,13 +663,18 @@ body {
 
 .spending i {
   position: absolute;
-  top: 0;
-  left: 0;
-  margin-top: 20px;
-  margin-left: 1250px;
+  top: 20px;
+  left: 1250px;
   font-size: 30px;
   color: #fff;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
+
+.spending i:hover {
+  transform: rotate(90deg) scale(1.2);
+}
+
 
 .spending-chart {
   margin-top: -320px;
@@ -709,9 +716,9 @@ body {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  margin-top: 115px;
-  margin-left: 170px;
-  width: 100%;
+  margin-top: 100px;
+  margin-left: 1030px;
+  width: fit-content;
 }
 
 .legend-row {
@@ -719,6 +726,14 @@ body {
   justify-content: center;
   gap: 12px;
   width: 100%;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.legend-row.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .legend-item {
@@ -736,3 +751,212 @@ body {
   display: inline-block;
 }
 
+.invest {
+  border: 1px solid #333;
+  width: 300px;
+  height: 420px;
+  margin-left: 1320px;
+  margin-top: -647px;
+  border-radius: 10px;
+  background: transparent;
+}
+
+.invest h1 {
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.invest p {
+  margin-top: -19px;
+  margin-left: 220px;
+  font-size: 15px;
+  color: #fff;
+}
+
+.apple img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  margin-top: 165px;
+  margin-left: 1340px;
+  border-radius: 50px;
+}
+
+.apple h1 {
+  margin-top: -350px;
+  margin-left: 1390px;
+  font-size: 15px;
+  color: #fff;
+}
+
+.tesla img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  margin-top: 225px;
+  margin-left: 1340px;
+  border-radius: 50px;
+}
+
+.tesla h1 {
+  margin-top: 40px;
+  margin-left: 1390px;
+  font-size: 15px;
+  color: #fff;
+}
+
+.nike img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  margin-top: 285px;
+  margin-left: 1340px;
+  border-radius: 50px;
+}
+
+.nike h1 {
+  margin-top: 42px;
+  margin-left: 1390px;
+  font-size: 15px;
+  color: #fff;
+}
+
+.netflix img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  margin-top: 345px;
+  margin-left: 1340px;
+  border-radius: 50px;
+}
+
+.netflix h1 {
+  margin-top: 42px;
+  margin-left: 1390px;
+  font-size: 15px;
+  color: #fff;
+}
+
+.amazon img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  margin-top: 405px;
+  margin-left: 1340px;
+  border-radius: 50px;
+}
+
+.amazon h1 {
+  margin-top: 42px;
+  margin-left: 1390px;
+  font-size: 15px;
+  color: #fff;
+}
+
+.coca-cola img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  margin-top: 465px;
+  margin-left: 1340px;
+  border-radius: 50px;
+}
+
+.coca-cola h1 {
+  margin-top: 42px;
+  margin-left: 1390px;
+  font-size: 15px;
+  color: #fff;
+}
+
+.viewall-3 .apple h1 {
+  margin-top: -325px;
+  margin-left: 1540px;
+  font-size: 15px;
+  color: #fff;
+}
+
+.viewall-3 .apple p {
+  margin-top: 5px;
+  margin-left: 1563px;
+  font-size: 12px;
+  color: lightgreen;
+}
+
+.viewall-3 .tesla h1 {
+  margin-top: 25px;
+  margin-left: 1540px;
+  font-size: 15px;
+  color: #fff;
+}
+
+.viewall-3 .tesla p {
+  margin-top: 5px;
+  margin-left: 1570px;
+  font-size: 12px;
+  color: lightcoral;
+}
+
+.viewall-3 .nike h1 {
+  margin-top: 20px;
+  margin-left: 1540px;
+  font-size: 15px;
+  color: #fff;
+}
+
+.viewall-3 .nike p {
+  margin-top: 5px;
+  margin-left: 1563px;
+  font-size: 12px;
+  color: lightgreen;
+}
+
+.viewall-3 .netflix h1 {
+  margin-top: 20px;
+  margin-left: 1540px;
+  font-size: 15px;
+  color: #fff;
+}
+
+.viewall-3 .netflix p {
+  margin-top: 5px;
+  margin-left: 1563px;
+  font-size: 12px;
+  color: lightgreen;
+}
+
+.viewall-3 .amazon h1 {
+  margin-top: 20px;
+  margin-left: 1540px;
+  font-size: 15px;
+  color: #fff;
+}
+
+.viewall-3 .amazon p {
+  margin-top: 5px;
+  margin-left: 1563px;
+  font-size: 12px;
+  color: lightcoral;
+}
+
+.viewall-3 .coca-cola h1 {
+  margin-top: 20px;
+  margin-left: 1540px;
+  font-size: 15px;
+  color: #fff;
+}
+
+.viewall-3 .coca-cola p {
+  margin-top: 5px;
+  margin-left: 1563px;
+  font-size: 12px;
+  color: lightgreen;
+}

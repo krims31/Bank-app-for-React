@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 
 export default function Spending() {
   const pieChartRef = useRef(null);
+  const [show, setShow] = useState(false);
   const [tooltip, setTooltip] = useState({ visible: false, x: 0, y: 0, text: "" });
 
   const segments = [
@@ -12,10 +13,17 @@ export default function Spending() {
     { color: "#9c27b0", start: 80, end: 100, price: "$90", label: "Other" },
   ];
 
+  // Анимация графика при монтировании
   useEffect(() => {
     if (pieChartRef.current) {
       pieChartRef.current.classList.add("animate");
     }
+  }, []);
+
+  // Появление легенды
+  useEffect(() => {
+    const timer = setTimeout(() => setShow(true), 100);
+    return () => clearTimeout(timer);
   }, []);
 
   const handleMouseMove = (e) => {
@@ -34,24 +42,26 @@ export default function Spending() {
         visible: true,
         x: e.clientX + 10,
         y: e.clientY + 10,
-        text: hoveredSegment.price + " - " + hoveredSegment.label,
+        text: `${hoveredSegment.price} - ${hoveredSegment.label}`,
       });
     } else {
-      setTooltip({ ...tooltip, visible: false });
+      setTooltip(prev => ({ ...prev, visible: false }));
     }
   };
 
   const handleMouseLeave = () => {
-    setTooltip({ ...tooltip, visible: false });
+    setTooltip(prev => ({ ...prev, visible: false }));
   };
 
   return (
     <div style={{ position: "relative" }}>
+      {/* Заголовок */}
       <div className="spending">
         <h1>Spending in August</h1>
         <i className="bx bx-dots-vertical-rounded"></i>
       </div>
 
+      {/* График */}
       <div className="spending-chart">
         <div
           ref={pieChartRef}
@@ -65,6 +75,7 @@ export default function Spending() {
           }}
         ></div>
 
+        {/* Tooltip */}
         {tooltip.visible && (
           <div
             className="tooltip"
@@ -86,32 +97,34 @@ export default function Spending() {
         )}
       </div>
 
+      {/* Общая сумма */}
       <div className="totalspending">
         <p>Total Spending</p>
         <h1>$7 683.21</h1>
       </div>
 
+      {/* Легенда */}
       <div className="spending-legend">
-  {/* Первая строка */}
-  <div className="legend-row">
-    {segments.slice(0, 3).map((s) => (
-      <div key={s.label} className="legend-item">
-        <span className="legend-color" style={{ backgroundColor: s.color }}></span>
-        <span className="legend-label">{s.label}</span>
-      </div>
-    ))}
-  </div>
-
-  {/* Вторая строка */}
-  <div className="legend-row">
-    {segments.slice(3).map((s) => (
-      <div key={s.label} className="legend-item">
-        <span className="legend-color" style={{ backgroundColor: s.color }}></span>
-        <span className="legend-label">{s.label}</span>
-      </div>
-    ))}
+        {/* Первая строка */}
+        <div className={`legend-row ${show ? "show" : ""}`}>
+          {segments.slice(0, 3).map((s) => (
+            <div key={s.label} className="legend-item">
+              <span className="legend-color" style={{ backgroundColor: s.color }}></span>
+              <span className="legend-label">{s.label}</span>
+            </div>
+          ))}
         </div>
+
+        {/* Вторая строка */}
+        <div className={`legend-row ${show ? "show" : ""}`}>
+          {segments.slice(3).map((s) => (
+            <div key={s.label} className="legend-item">
+              <span className="legend-color" style={{ backgroundColor: s.color }}></span>
+              <span className="legend-label">{s.label}</span>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
-</div>
   );
 }
