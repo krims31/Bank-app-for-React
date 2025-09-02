@@ -1,0 +1,738 @@
+@import url('https://fonts.googleapis.com/css2?family=Finlandica:ital,wght@0,400..700;1,400..700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Finlandica', sans-serif;
+}
+
+body {
+  background-color: #151515;
+}
+
+.header-logo {
+  color: #ffffff;
+  font-size: 15px;
+  text-align: left;
+  padding: 16px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.input input {
+  width: 13%;
+  padding: 10px;
+  border: 1px solid #151515;
+  opacity: 0.5;
+  border-radius: 5px;
+  margin-left: 85rem;
+  margin-top: 35px;
+  background-color: #333;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.input input::placeholder {
+  padding-left: 0px;
+  opacity: 0.5;
+}
+
+.input i {
+  position: absolute;
+  top: 4.7%;
+  left: 82%;
+  font-size: 25px;
+  color: #fff;
+}
+
+.notif {
+  border: 1px solid #fff;
+  border-radius: 5px;
+  width: 40px;
+  height: 40px;
+  margin-left: 105rem;
+  margin-top: -40px;
+  cursor: pointer;
+}
+
+.notif i {
+  margin-left: 0.4rem;
+  margin-top: 6px;
+  font-size: 25px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.notif:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.user i {
+  margin-left: 109rem;
+  margin-top: -110px;
+  font-size: 45px;
+  color: #fff;
+  position: absolute;
+  top: 15%;
+  left: 0;
+  cursor: pointer;
+}
+
+.user i:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.content-left {
+  background: transparent;
+  width: 290px;
+  height: 270px;
+  margin-left: 350px;
+  margin-top: 30px;
+  border-radius: 10px;
+  border: 1px solid #333;
+}
+
+.content-left:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.content-left h1 {
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.content-left p {
+  margin-top: -19px;
+  margin-left: 230px;
+  font-size: 15px;
+  color: #fff;
+}
+
+.starbucks img {
+  width: 30px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.starbucks h1 {
+  margin-top: -35px;
+  margin-left: 60px;
+  font-size: 15px;
+  color: #fff;
+}
+
+.starbucks p {
+  margin-top: 1px;
+  margin-left: 60px;
+  font-size: 10px;
+  color: #fff;
+}
+
+.Dior img {
+  width: 30px;
+  margin-top: 18px;
+  margin-left: 20px;
+  border-radius: 50px;
+}
+
+.Dior h1 {
+  margin-top: -35px;
+  margin-left: 60px;
+  font-size: 15px;
+  color: #fff;
+}
+
+.Dior p {
+  margin-top: 1px;
+  margin-left: 60px;
+  font-size: 10px;
+  color: #fff;
+}
+
+.dkny img {
+  width: 30px;
+  margin-top: 18px;
+  margin-left: 20px;
+  border-radius: 50px;
+}
+
+.dkny h1 {
+  margin-top: -35px;
+  margin-left: 60px;
+  font-size: 15px;
+  color: #fff;
+}
+
+.dkny p {
+  margin-top: 1px;
+  margin-left: 60px;
+  font-size: 10px;
+  color: #fff;
+}
+
+.Netflix img {
+  width: 30px;
+  margin-top: 18px;
+  margin-left: 20px;
+  border-radius: 50px;
+}
+
+.Netflix h1 {
+  margin-top: -35px;
+  margin-left: 60px;
+  font-size: 15px;
+  color: #fff;
+}
+
+.Netflix p {
+  margin-top: 1px;
+  margin-left: 60px;
+  font-size: 10px;
+  color: #fff;
+}
+
+.viewall .starbucks h1 {
+  margin-top: -178px;
+  margin-left: 225px;
+  font-size: 15px;
+  color: #fff;
+}
+
+.viewall .starbucks p {
+  margin-top: 1px;
+  margin-left: 225px;
+  font-size: 10px;
+  color: #fff;
+}
+
+.viewall .DIOR h1 {
+  margin-top: 16px;
+  margin-left: 215px;
+  font-size: 15px;
+  color: #fff;
+}
+
+.viewall .DIOR p {
+  margin-top: 1px;
+  margin-left: 230px;
+  font-size: 10px;
+  color: #fff;
+}
+
+.viewall .dkny h1 {
+  margin-top: 16px;
+  margin-left: 222px;
+  font-size: 15px;
+  color: #fff;
+}
+
+.viewall .dkny p {
+  margin-top: 1px;
+  margin-left: 229px;
+  font-size: 10px;
+  color: #fff;
+}
+
+.viewall .Netflix h1 {
+  margin-top: 16px;
+  margin-left: 220px;
+  font-size: 15px;
+  color: #fff;
+}
+
+.viewall .Netflix p {
+  margin-top: 1px;
+  margin-left: 230px;
+  font-size: 10px;
+  color: #fff;
+}
+
+.my-goals {
+  margin-top: 20px;
+  margin-left: 350px;
+  width: 290px;
+  height: 400px;
+  border-radius: 10px;
+  border: 1px solid #333;
+}
+
+.my-goals h1 {
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.my-goals p {
+  margin-top: -19px;
+  margin-left: 230px;
+  font-size: 15px;
+  color: #fff;
+}
+
+.iphone img {
+  width: 30px;
+  margin-top: 20px;
+  margin-left: 20px;
+  border: 1px solid #333;
+  border-radius: 50px;
+}
+
+.iphone h1 {
+  margin-top: -35px;
+  margin-left: 60px;
+  font-size: 15px;
+  color: #fff;
+}
+
+.iphone p {
+  margin-top: 1px;
+  margin-left: 60px;
+  font-size: 10px;
+  color: #fff;
+}
+
+.health img {
+  width: 30px;
+  margin-top: 20px;
+  margin-left: 20px;
+  border-radius: 50px;
+}
+
+.health h1 {
+  margin-top: -35px;
+  margin-left: 60px;
+  font-size: 15px;
+  color: #fff;
+}
+
+.health p {
+  margin-top: 1px;
+  margin-left: 60px;
+  font-size: 10px;
+  color: #fff;
+}
+
+.Laptop img {
+  width: 30px;
+  margin-top: 20px;
+  margin-left: 20px;
+  border-radius: 50px;
+}
+
+.Laptop h1 {
+  margin-top: -35px;
+  margin-left: 60px;
+  font-size: 15px;
+  color: #fff;
+}
+
+.Laptop p {
+  margin-top: 1px;
+  margin-left: 60px;
+  font-size: 10px;
+  color: #fff;
+}
+
+.clothes img {
+  width: 30px;
+  margin-top: 20px;
+  margin-left: 20px;
+  border-radius: 50px;
+}
+
+.clothes h1 {
+  margin-top: -35px;
+  margin-left: 60px;
+  font-size: 15px;
+  color: #fff;
+}
+
+.clothes p {
+  margin-top: 1px;
+  margin-left: 60px;
+  font-size: 10px;
+  color: #fff;
+}
+
+.Traveling img {
+  width: 30px;
+  margin-top: 20px;
+  margin-left: 20px;
+  border-radius: 50px;
+}
+
+.Traveling h1 {
+  margin-top: -35px;
+  margin-left: 60px;
+  font-size: 15px;
+  color: #fff;
+}
+
+.Traveling p {
+  margin-top: 1px;
+  margin-left: 60px;
+  font-size: 10px;
+  color: #fff;
+}
+
+.viewall-2 .iphone-2 h1 {
+  margin-top: -226px;
+  margin-left: 222px;
+  font-size: 15px;
+  color: #fff;
+}
+
+.viewall-2 .health-2 h1 {
+  margin-top: 32px;
+  margin-left: 222px;
+  font-size: 15px;
+  color: #fff;
+}
+
+.viewall-2 .laptop-2 h1 {
+  margin-top: 32px;
+  margin-left: 222px;
+  font-size: 15px;
+  color: #fff;
+}
+
+.viewall-2 .clothes-2 h1 {
+  margin-top: 32px;
+  margin-left: 222px;
+  font-size: 15px;
+  color: #fff;
+}
+
+.viewall-2 .Traveling-2 h1 {
+  margin-top: 32px;
+  margin-left: 211px;
+  font-size: 15px;
+  color: #fff;
+}
+
+.add-goal input {
+  margin-top: 40px;
+  margin-left: 20px;
+  width: 250px;
+  height: 45px;
+  background: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #333;
+}
+
+.add-goal i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 740px;
+  margin-left: 440px;
+  width: 250px;
+}
+
+.add-goal:hover {
+  animation: bounce 0.5s ease;
+  cursor: pointer;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-5px);
+  }
+  60% {
+    transform: translateY(-3px);
+  }
+}
+
+.card-top-centre {
+  border: 1px solid #333;
+  width: 650px;
+  height: 270px;
+  margin-left: 650px;
+  margin-top: -690px;
+  border-radius: 10px;
+  background: transparent;
+}
+
+.balance-card h1 {
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.balance-card p {
+  margin-top: 10px;
+  margin-left: 20px;
+  font-size: 25px;
+  color: #fff;
+}
+
+.balance-card input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 120px;
+  margin-left: 1120px;
+  width: 150px;
+  height: 45px;
+  background: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #333;
+  transition: all 0.3s ease;
+}
+
+/* эффект при наведении */
+.balance-card input:hover {
+  background: #f5f5f5;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* эффект при клике */
+.balance-card input:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.master-card img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 180px;
+  margin-left: 610px;
+  width: 350px;
+}
+
+.visa img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 205px;
+  margin-left: 1040px;
+  width: 230px;
+}
+
+.total-income {
+  border: 1px solid #333;
+  width: 300px;
+  height: 220px;
+  margin-left: 650px;
+  margin-top: 20px;
+  border-radius: 10px;
+  background: transparent;
+}
+
+.total-income h1 {
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.total-income p {
+  margin-top: 5px;
+  margin-left: 22px;
+  font-size: 10px;
+  color: gray;
+}
+
+.total-income h2 {
+  margin-top: 80px;
+  margin-left: 20px;
+  font-size: 25px;
+  color: #fff;
+}
+
+.pie-chart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -150px;
+  margin-left: -150px;
+  gap: 20px;
+}
+
+.pie-chart {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: conic-gradient(
+    #4caf50 0% 40%,   /* Зеленая 40% */
+    #2196f3 40% 70%,  /* Синяя 30% */
+    #ff9800 70% 100%  /* Оранжевая 30% */
+  );
+  cursor: pointer;
+  transition: transform 0.3s;
+  animation: grow 1s ease-out forwards;
+}
+
+@keyframes grow {
+  0% { transform: scale(0); }
+  100% { transform: scale(1); }
+}
+
+.pie-chart:hover {
+  transform: scale(1.05);
+}
+
+.cashback {
+  border: 1px solid #333;
+  width: 300px;
+  height: 170px;
+  margin-left: 650px;
+  margin-top: 60px;
+  border-radius: 10px;
+  background: transparent;
+} 
+
+.cashback h1 {
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.cashback p {
+  margin-top: 5px;
+  margin-left: 22px;
+  font-size: 10px;
+  color: gray;
+}
+
+.cashback h2 {
+  margin-top: 50px;
+  margin-left: 20px;
+  font-size: 25px;
+  color: #fff;
+}
+
+.cashback-chart {
+  margin-top: -130px;
+  margin-left: -160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chart {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  cursor: pointer;
+
+  /* делаем кольцо тонким */
+  mask: radial-gradient(farthest-side, transparent calc(100% - 25px), black 0);
+  -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 25px), black 0);
+
+  transition: transform 0.3s ease;
+}
+
+.chart:hover {
+  transform: scale(1.05);
+}
+
+.spending {
+  border: 1px solid #333;
+  width: 340px;
+  height: 400px;
+  margin-left: 960px;
+  margin-top: -370px;
+  border-radius: 10px;
+  background: transparent;
+}
+
+.spending h1 {
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.spending i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 20px;
+  margin-left: 1250px;
+  font-size: 30px;
+  color: #fff;
+}
+
+.spending-chart {
+  margin-top: -320px;
+  margin-left: 1020px;
+}
+
+.chart-2 {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  cursor: pointer;
+
+  /* делаем кольцо */
+  mask: radial-gradient(farthest-side, transparent calc(100% - 25px), black 0);
+  -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 25px), black 0);
+
+  transition: transform 0.3s ease;
+}
+
+.chart:hover {
+  transform: scale(1.05);
+}
+
+.totalspending p {
+  margin-top: -140px;
+  margin-left: 1085px;
+  font-size: 15px;
+  color: gray;
+}
+
+.totalspending h1 {
+  margin-top: 10px;
+  margin-left: 1080px;
+  font-size: 22px;
+  color: #fff;
+}
+
+.spending-legend {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 115px;
+  margin-left: 170px;
+  width: 100%;
+}
+
+.legend-row {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.legend-color {
+  width: 12px;
+  height: 12px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
