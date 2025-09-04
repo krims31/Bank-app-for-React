@@ -8,6 +8,7 @@ import CentreTop from './components/centre-top-card/CentreTop';
 import TotalIncome from './components/TotalIncome/TotalIncome';
 import Spending from './components/Spending/Spending';
 import Investments from './components/investments/Invstments';
+import Transfer from './components/Transfer/Transfer';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
       <Cashback />
       <Spending />
       <Investments />
+      <Transfer />
     </>
   )
 }

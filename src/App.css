@@ -960,3 +960,179 @@ body {
   font-size: 12px;
   color: lightgreen;
 }
+
+.transfer {
+  border: 1px solid #333;
+  width: 300px;
+  height: 250px;
+  margin-left: 1320px;
+  margin-top: 50px;
+  border-radius: 10px;
+  background: transparent;
+}
+
+.transfer h1 {
+  margin-top: 20px;
+  margin-left: 20px;
+  color: #fff;
+  font-size: 20px;
+}
+
+.transfer i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 565px;
+  margin-left: 1570px;
+  color: #fff;
+  font-size: 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+.transfer i:hover {
+  transform: rotate(90deg) scale(1.2);
+}
+
+.limit h2 {
+  margin-top: -195px;
+  margin-left: 1343px;
+  color: gray;
+  font-size: 10px;
+}
+
+.limit h1 {
+  margin-top: -15px;
+  margin-left: 1525px;
+  color: #fff;
+  font-size: 15px;
+}
+
+.limit p {
+  margin-top: -15px;
+  margin-left: 1560px;
+  color: gray;
+  font-size: 10px;
+}
+
+.from h1 {
+  margin-top: 50px;
+  margin-left: 1345px;
+  color: gray;
+  font-size: 10px;
+}
+
+.from input {
+  margin-top: 5px;
+  margin-left: 1345px;
+  width: 120px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid #333;
+  transition: all 0.3s ease-in-out;
+  background: #333;
+}
+
+.from input:hover {
+  background: #f5f5f5;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.from img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 685px;
+  margin-left: 1350px;
+  width: 30px;
+  border-radius: 50px;
+}
+
+.from p {
+  margin-top: -27px;
+  margin-left: 1395px;
+  color: #fff;
+  font-size: 13px;
+}
+
+.To h1 {
+  margin-top: -42px;
+  margin-left: 1480px;
+  color: gray;
+  font-size: 10px;
+}
+
+.To input {
+  margin-top: 1px;
+  margin-left: 1475px;
+  width: 120px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid #333;
+  background: #333;
+}
+
+.To input:hover {
+  background: #f5f5f5;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.To img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 692px;
+  margin-left: 1480px;
+  width: 30px;
+  border-radius: 50px;
+}
+
+.To p {
+  margin-top: -27px;
+  margin-left: 1525px;
+  color: #fff;
+  font-size: 13px;
+}
+
+.amount h1 {
+  margin-top: 20px;
+  margin-left: 1345px;
+  color: gray;
+  font-size: 10px;
+}
+
+.amount input {
+  margin-top: 1px;
+  margin-left: 1345px;
+  width: 120px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid #333;
+  background: #333;
+  cursor: pointer;
+}
+
+.amount p {
+  margin-top: -27px;
+  margin-left: 1355px;
+  color: #fff;
+  font-size: 13px;
+}
+
+.transfer-btn input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 740px;
+  margin-left: 1475px;
+  width: 120px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid #333;
+  background: #ffffff;
+  color: #151515;
+  font-size: 15px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
